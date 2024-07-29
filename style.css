@@ -1,0 +1,165 @@
+
+ p, h1 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+    
+  }
+
+  #content-wrap {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  main {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header {
+    background-color: #333333;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding: 1.5rem 0 1.5rem 0rem;
+
+  
+  }
+
+  .hide_me {
+    background-color: #EBEBE4;
+  }
+  @media only screen and (max-width: 400px) {
+    /* hide one of the rows of the table */
+    .hide_me {
+      display: none;
+    }
+
+  }
+
+
+  header a {
+    margin-left: 2rem; 
+  }
+
+  header a:hover,  #active-page:hover{
+    color: white;
+  }
+
+  #header, a {
+    width: 100%;
+    color: #00b8d4;
+    text-decoration: none;
+  }
+
+  #image-frame {
+   border-radius: 100px;
+   height: 200px;
+   width: 200px;
+   background:  no-repeat center; 
+   background-size: contain;
+  }
+
+
+  #footer {
+    box-sizing: border-box;
+    background-color: #333333;
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    height: 3rem; 
+    
+  }
+
+  table td{
+    text-align: center;
+  }
+  table {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: Tahoma, sans-serif;
+    background-color: #FEFDFB;
+    margin: 0;
+  }
+
+  #active-page {
+    color: #b2f5ea;
+    font-weight: bold;
+  }
+
+
+  .image-card {
+    width: 301px;
+    height: auto;
+
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project-card {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    border-radius: 50px;
+    width: 301px;
+    height: 425px;
+  }
+
+  .project-card p {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .project-card h6 {
+    padding: 0;
+    margin: 0;
+  }
+
+  #info_client {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  #info_client *{
+    padding: 0.8rem;
+  }
+
+
+
+  #consent {
+    transform: scale(1.5, 1.5);
+  }
+
+  #email_me {
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  #agree-text {
+    text-align: left;
+    padding-left: 0px;
+
+  }

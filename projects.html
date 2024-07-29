@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>My first page</title>
+    </head>
+
+    <body>
+        <div id="page-container">
+            <header>
+                <span id="header">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a id="active-page" href="projects.html" >Projects</a>
+                    <a href="contact.html">Contact</a>
+                </span>
+            </header>
+                <main id="content-wrap">
+                    <h1> Projects </h1>
+                    <p>Here are my current and past projects.</p>
+                    <div class="container"> 
+                        <div class="project-card"> 
+                            <img class="image-card" src="project1.jpg" /> 
+        
+                            <p> Developed a full-stack web application using Django to manage the inventory and all back-end data and using React for the front-end. Increased the profits of the butcher shop by 34% by allowing them to display their products online. Implemented GitHub OAuth to get data from user’s repositories</p>
+                        </div>
+                        <div class="project-card"> 
+                            <img class="image-card" src="project2.jpg" /> 
+        
+                            <p> Designed and tested a game for Android and IOS that improved the reaction time for kids from 9-14 years old. Implemented a REST API to send and store the data from the users in a MySQL database</p>
+                        </div>
+                        <div class="project-card"> 
+                            <img class="image-card" src="project3.jpg" /> 
+
+                            <p> Developed and performed timeseries analysis and regression to determine the biases of data from TROPOMI mission vs (EM27/SUN) measurement of NO2 and CO</p>
+                        </div>
+                    </div>
+                    <p> Need a full stack web developer? Tell me about your project.</p>
+
+
+                    <form id='info_client' action="https://postman-echo.com/post" method="POST" enctype="multipart/form-data">
+                        <label for="email"> Your Email:</label>
+                        <input id="email" name="email" type="email" required/>
+
+                        <label>
+                            Select the type of project:
+                        </label>
+                        <select required>
+                            <option>Personal Website</option>
+                            <option>eCommerce</option>
+                            <option>Game</option>
+                        </select>
+                        <label for="feedback">Enter your project concept here</label>
+                        <textarea name="feedback" id="feedback"required></textarea>
+                        <label for="attachments">Attachment: </label>
+                        <input id="attachments" name="attachments" type="file" required/>
+                        <div> 
+                            <input id="consent" name="consent" type="checkbox" value="yes" required/> 
+                            <label id="agree-text" for="consent">You agree to receive emails from me</label>
+                        </div>
+                        <button type="submit">Send </button>
+                        
+
+                    </form>
+                </main>
+            <footer id="footer">
+                Copyright 2024 by ibarrame.
+            </footer>
+        </div>
+    </body>
+</html>
